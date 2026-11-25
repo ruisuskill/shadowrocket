@@ -1,0 +1,7 @@
+#!name=广告拦截（Marley）
+#!desc=拦截广告与跟踪域名：anti-AD 全量名单 + AWAvenue 补充名单。不改你的分流，不需要装证书。名单由上游自动更新。
+#!system=ios
+
+[Rule]
+DOMAIN-SET,https://anti-ad.net/surge2.txt,REJECT
+RULE-SET,https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge-RULE-SET.list,REJECT
